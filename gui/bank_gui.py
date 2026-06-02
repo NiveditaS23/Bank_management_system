@@ -12,7 +12,7 @@ def connect_to_db():
             host='localhost',        # Typically 'localhost' or an IP address
             user='root',
             password='Hello@123',
-            database='VITBank'
+            database='STPBank'
         )
         if conn.is_connected():
             # messagebox.showinfo("","Connected to MySQL database")
