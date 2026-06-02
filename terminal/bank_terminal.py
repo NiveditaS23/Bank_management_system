@@ -16,7 +16,7 @@
 # 15 quit from the program 
 
 # MINIMUM BALANCE SHOULD BE 500
-# Let the name of the bank be VITBank and all the details should be fetched and send to MySQL using python MySQL connectivity.
+# Let the name of the bank be STPBank and all the details should be fetched and send to MySQL using python MySQL connectivity.
 
 # to make a new account we need the following:-
 # 1 aadhaar card (aadhaar number should contain only numbers and should be of 12 digits)
@@ -42,8 +42,8 @@ def connect_to_db():
         conn = mysql.connector.connect(
             host='localhost',        # Typically 'localhost' or an IP address
             user='root',
-            password='Aksh@t27',
-            database='VITBank'
+            password='Hello@123',
+            database='STPBank'
         )
         if conn.is_connected():
             # print("Connected to MySQL database")
@@ -603,7 +603,7 @@ def pay_loan(account_number):
 
 def quit_program():
     """ Cleanly exit the program """
-    print("Thank you for using VITBank services. Goodbye!")
+    print("Thank you for using STPBank services. Goodbye!")
     exit()
 
 def log_transaction(account_number, transaction_type, amount, method):
@@ -626,7 +626,7 @@ def log_transaction(account_number, transaction_type, amount, method):
 def main_menu():
     """ Main menu function to navigate through different functionalities of the bank system """
     while True:
-        print("\nWelcome to VITBank Main Menu")
+        print("\nWelcome to STPBank Main Menu")
         print("1. Open Account")
         print("2. Get Online Banking Credentials")
         print("3. Change Password for Online Banking")
